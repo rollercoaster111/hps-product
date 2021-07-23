@@ -5,10 +5,9 @@
 	margin: 0;
 }
 body {
-	background-image: url(images/blueprint.png);
+	background-image: url(images/bp_2.jpg);
 	background-size: cover;
 	background-position: center;
-
 	font-family: sans-serif;
 }
 .menu-bar
