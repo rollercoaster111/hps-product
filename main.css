@@ -8,7 +8,7 @@
 	font-family: 'Roboto', sans-serif;
 }
 body {
-	background: #000;
+	background: #ddd;
 	min-height: 200vh;
 }
 header
@@ -93,20 +93,21 @@ header.sticky ul li a
 }
 .active, .menu-bar ul li:hover
 {
-	background: #2bab0d;
+	background: #808080;
 	border-radius: 3px;
 }
 .sub-menu-1
 {
 	display: none;
+	border-radius: 3px;
 }
 .menu-bar ul li:hover .sub-menu-1
 {
 	display: block;
 	position: absolute;
-	background: rgb(0,100,0);
-	margin-top: 15px;
-	margin-left: -15px;
+	background: rgb(128,128,128);
+	margin-top: 10px;
+	margin-left: -10px;
 }
 .menu-bar ul li:hover .sub-menu-1 ul
 {
@@ -115,11 +116,12 @@ header.sticky ul li a
 }
 .menu-bar ul li:hover .sub-menu-1 ul li
 {
-	width: 150px;
-	border-bottom: 1px dotted #fff;
+	width: 145px;
+	padding: 10px;
+	border-bottom: 1px dotted #000;
 	background: transparent;
 	border-radius: 0;
-	text-align: left;
+	text-align: middle;
 }
 .menu-bar ul li:hover .sub-menu-1 ul li:last-child
 {
@@ -127,10 +129,8 @@ header.sticky ul li a
 }
 .menu-bar ul li:hover .sub-menu-1 ul li a:hover
 {
-	color: #b2ff00;
+	color: #3032e5;
 }
-
-
 
 
 
