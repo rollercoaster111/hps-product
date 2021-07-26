@@ -1,1 +1,72 @@
-This is for Week 4 work.
+<!--This is for Week 4 work.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Drop-Down Menu Design</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">google hps</a>
+		<div class="menu-bar">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Weeks 1-4</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">Week 1</a></li>
+						<li><a href="#">Week 2</a></li>
+						<li><a href="#">Week 3</a></li>
+						<li><a href="#">Week 4</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Weeks 5-8</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">Week 5</a></li>
+						<li><a href="#">Week 6</a></li>
+						<li><a href="#">Week 7</a></li>
+						<li><a href="#">Week 8</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Weeks 9-12</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">Week 9</a></li>
+						<li><a href="#">Week 10</a></li>
+						<li><a href="#">Week 11</a></li>
+						<li><a href="#">Week 12</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">About Me</a></li>
+		</ul>
+		</div>
+	</header>
+	<section class="banner">
+		<div class="para-1">
+			<h1>Introduction</h1>
+			<p>Home of the Noisemaker, a product made to highlight the design process for injection molded parts and products.</p>
+		</div>
+	</section>
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky", window.scrollY > 0);
+		})
+	</script>
+	<section class="first-one">
+		<h2>Summary: This should be Seen</h2>
+		<p>
+			In the summer of 2021, 50 participants were assigned to come up with various ideas into which the components of an AIY project kit could be incorporated. After deciding on a single idea, each participant would go through the design process individually, slowly building upon the knowledge they had attained through the Hardware Product Sprint Program towards the final goal of a product which was designed for injection molding. In reality, the parts would be 3D-printed to get a sense of scale; however, each learning session was fixed particularly in the areas of injection molding and the design aspects specifically related to this manufacturing method. Therefore, by the end of the program, each participant would have gone through a complete process from ideation to the final product creation. This website demonstrates the process I followed along with 49 other participants to create my consumer electronic product, the noisemaker. While this may not be a unique idea, the creation of this product will highlight the steps I took within the program and the knowledge I have obtained following this experience.
+		</p>
+		<img>
+		<h3>Project Overview</h3>
+		<h3>AIY Project Kit Content</h3>
+		<h3>Product Constraint</h3>
+	</section>
+</body>
+</html>
