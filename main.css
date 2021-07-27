@@ -1,5 +1,5 @@
 /*This is the intended CSS file for the website designs.*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500&display=swap');
 *{
 	padding: 0;
 	margin: 0;
@@ -62,10 +62,10 @@ header ul li a{
 	background: url(images/blueprint.png);
 	background-size: cover;
 }
-.banner h1{
+.banner h1,p{
 	font-size: 80px;
 	color: #fff;
-	text-align: center;
+	text-align: left;
 }
 .banner p{
 	font-size: 16px;
@@ -88,6 +88,69 @@ header ul li a{
 	font-size: 16px;
 	color: #fff;
 	text-align: center;
+}
+.features{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+h1{
+	color: #fff;
+	font-size: 40 px;
+	font-weight: 600;
+}
+p{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	padding: 10px;
+}
+.row{
+	margin-top: 0%;
+	display: flex;
+	justify-content: space-between;
+}
+.intro-col{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.intro-col img{
+	width: 100%;
+	display: block;
+}
+.layer{
+	background: transparent;
+	color: #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.layer:hover{
+	background: rgba(226,0,0,0.7);
+}
+.layer h3{
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layer:hover h3{
+	bottom: 49%;
+	opacity: 1
 }
 .banner2{
 	position: relative;
@@ -194,7 +257,7 @@ header ul li a{
 .para-1{
 	position: absolute;
 	top: 45%;
-	left: 25%;
+	left: 35%;
 }
 .para-2{
 	width: 80%;
@@ -266,65 +329,14 @@ header.sticky ul li a{
 	padding-bottom: 100px;
 	color: #000;
 }
-.first-one h2,h3,p{
+.first-one h2, h3, p{
+	text-align: left;
 	padding-left: 20px;
+	color: #000;
 }
-
-
-.container{
-	width: 90%;
-	padding: 20px;
-	margin: 0px auto; /* change margin to 0 px here for the purpose of merging rows */
-	background: #000;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+.first-one p{
+	font-size: 16px;
 }
-.box{
-	width: 250px;
-	height: 300px;
-	background: orange;
-    margin: 0px 10px;
-    transition: 1s;
-}
-.box:hover{
-	transform: scale(1.3);
-	background: rgba(226,0,0,0.7);
-	z-index: 2;
-	box-shadow: 2px 2px 2px #000;
-}
-.box h3,p{
-	width: 80%;
-	font-weight: 500;
-	color: #fff;
-	font-size: 26px;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	position: absolute;
-  text-align: center;
-	opacity: 0;
-	transition: 0.5s;
-}
-.box img{
-	display: block;
-}
-.box:hover h3{
-  bottom: 49%;
-  text-align: center;
-  font-weight: 800;
-  opacity: 1;
-}
-.box:hover p{
-  bottom: 30%;
-  font-size: 20px;
-  font-weight: 200;
-  text-align: center;
-  opacity: 1;
-}
-
-
-
 
 
 
