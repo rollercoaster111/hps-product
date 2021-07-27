@@ -97,7 +97,7 @@ header ul li a{
 }
 h1{
 	color: #fff;
-	font-size: 40 px;
+	font-size: 40px;
 	font-weight: 600;
 }
 p{
@@ -118,10 +118,15 @@ p{
 	margin-bottom: 30px;
 	position: relative;
 	overflow: hidden;
+	transition: 1s;
 }
 .intro-col img{
 	width: 100%;
 	display: block;
+}
+.intro-col:hover{
+	transform: scale(1.3);
+	z-index: 100000;
 }
 .layer{
 	background: transparent;
@@ -134,7 +139,7 @@ p{
 	transition: 0.5s;
 }
 .layer:hover{
-	background: rgba(226,0,0,0.7);
+	background: rgba(4,9,30,0.5);
 }
 .layer h3{
 	width: 100%;
@@ -257,7 +262,7 @@ p{
 .para-1{
 	position: absolute;
 	top: 45%;
-	left: 35%;
+	left: 27%;
 }
 .para-2{
 	width: 80%;
