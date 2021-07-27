@@ -79,10 +79,142 @@ header ul li a{
 	background-image: url(images/brainstorm.jpg);
 	background-size: cover;
 }
+.banner1 h1{
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+}
+.banner1 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+.banner2{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/brainstorm.jpg);
+	background-size: cover;
+}
+.banner2 h1{
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+}
+.banner2 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+.banner3{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/engine.jpg);
+	background-size: cover;
+}
+.banner3 h1{
+	font-size: 80px;
+	color: #000;
+	text-align: center;
+}
+.banner3 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+.banner4{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/engine.jpg);
+	background-size: cover;
+}
+.banner4 h1{
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+}
+.banner4 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+.banner5{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/robots.jpg);
+	background-size: cover;
+}
+.banner5 h1{
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+}
+.banner5 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+.banner6{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/injection-molding.jpg);
+	background-size: cover;
+}
+.banner6 h1{
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+}
+.banner6 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+
+
+
+
+.banner7{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/injection-molding.jpg);
+	background-size: cover;
+}
+.banner7 h1{
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+}
+.banner7 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+
+
+
+
 .para-1{
 	position: absolute;
 	top: 45%;
 	left: 25%;
+}
+.para-2{
+	width: 80%;
+	position: absolute;
+	top: 45%;
+	left: 10%;
+}
+.para-3{
+	width: 80%;
+	position: absolute;
+	top: 45%;
+	left: 10%;
 }
 header.sticky .logo,
 header.sticky ul li a{
