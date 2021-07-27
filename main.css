@@ -182,7 +182,7 @@ header ul li a{
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	background-image: url(images/injection-molding.jpg);
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/injection-molding.jpg);
 	background-size: cover;
 }
 .banner7 h1{
@@ -196,7 +196,9 @@ header ul li a{
 	text-align: center;
 }
 
-
+.test1{
+	width: 100%;
+}
 
 
 .para-1{
