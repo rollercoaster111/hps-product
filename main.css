@@ -53,7 +53,6 @@ header ul li a{
 	color: #fff;
 	letter-spacing: 2px;
 	font-weight: 500px;
-	transition: 0.6s;
 }
 .footer{
 	color: #000;
@@ -70,6 +69,7 @@ header ul li a{
 .footer p{
 	font-weight: 200;
 	text-align: center;
+	color: #000;
 }
 /*--Home Page Banner--*/
 .banner{
@@ -106,6 +106,200 @@ header ul li a{
 	font-size: 16px;
 	color: #fff;
 	text-align: center;
+}
+/*--Week 2 Banner --*/
+.banner2{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/sketches.jpg);
+	background-size: cover;
+}
+.banner2 h1{
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+}
+.banner2 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+/*--Week 3 Banner --*/
+.banner3{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/concept.jpg);
+	background-size: cover;
+}
+.banner3 h1{
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+}
+.banner3 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+/*--Week 4 Banner --*/
+.banner4{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/engine.jpg);
+	background-size: cover;
+}
+.banner4 h1{
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+}
+.banner4 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+/*--Week 5 Banner --*/
+.banner5{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/robots.jpg);
+	background-size: cover;
+}
+.banner5 h1{
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+}
+.banner5 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+/*--Week 6 Banner --*/
+.banner6{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/injection-molding.jpg);
+	background-size: cover;
+}
+.banner6 h1{
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+}
+.banner6 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+/*--Week 7 Banner --*/
+.banner7{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bom.jpg);
+	background-size: cover;
+}
+.banner7 h1{
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+}
+.banner7 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+.para-1{
+	position: absolute;
+	top: 45%;
+	left: 27%;
+}
+.para-2{
+	width: 80%;
+	position: absolute;
+	top: 45%;
+	left: 10%;
+}
+.para-3{
+	width: 80%;
+	position: absolute;
+	top: 45%;
+	left: 10%;
+}
+/*---Banner (All Tabs) --*/
+header.sticky .logo,
+header.sticky ul li a{
+	color: #000;
+}
+.menu-bar ul{
+	display: inline-flex;
+	list-style: none;
+}
+.menu-bar ul li{
+	width: 165px;
+	margin: 0px;
+	padding: 10px;
+	text-align: center;
+}
+.menu-bar ul li a{
+	text-decoration: none;
+}
+.active, .menu-bar ul li:hover{
+	background: #808080;
+	border-radius: 0px;
+}
+.sub-menu-1{
+	display: none;
+	border-radius: 0px;
+}
+.menu-bar ul li:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+	background: rgb(128,128,128);
+	margin-top: 10px;
+	margin-left: -10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+	display: block;
+	margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+	width: 145px;
+	padding: 10px;
+	border-bottom: 1px dotted #000;
+	background: transparent;
+	border-radius: 0;
+	text-align: middle;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+	border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+	color: #0cbfe9;
+}
+.first-one{
+	width: 80%;
+	margin: auto;
+	text-align: left;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	color: #000;
+}
+.first-one h2, h3, p{
+	text-align: left;
+	padding-left: 20px;
+	color: #000;
+}
+.first-one p{
+	font-size: 16px;
+	padding-left: 20px;
+	color: #000;
 }
 /*---Week 1 Concepts Display --*/
 .features{
@@ -190,202 +384,27 @@ p{
 	transition: 0.5s;
 }
 .layer:hover h3{
-	bottom: 49%;
+	bottom: 70%;
 	opacity: 1;
 }
 .layer:hover p{
-	bottom: 20%;
+	bottom: 10%;
 	opacity: 1;
 }
-.banner2{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/sketches.jpg);
-	background-size: cover;
+/*--Week 2 Images--*/
+.gallery{
+	margin: 10px 50px;
 }
-.banner2 h1{
-	font-size: 80px;
-	color: #fff;
-	text-align: center;
-}
-.banner2 p{
-	font-size: 16px;
-	color: #fff;
-	text-align: center;
-}
-.banner3{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/concept.jpg);
-	background-size: cover;
-}
-.banner3 h1{
-	font-size: 80px;
-	color: #fff;
-	text-align: center;
-}
-.banner3 p{
-	font-size: 16px;
-	color: #fff;
-	text-align: center;
-}
-.banner4{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/engine.jpg);
-	background-size: cover;
-}
-.banner4 h1{
-	font-size: 80px;
-	color: #fff;
-	text-align: center;
-}
-.banner4 p{
-	font-size: 16px;
-	color: #fff;
-	text-align: center;
-}
-.banner5{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/robots.jpg);
-	background-size: cover;
-}
-.banner5 h1{
-	font-size: 80px;
-	color: #fff;
-	text-align: center;
-}
-.banner5 p{
-	font-size: 16px;
-	color: #fff;
-	text-align: center;
-}
-.banner6{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/injection-molding.jpg);
-	background-size: cover;
-}
-.banner6 h1{
-	font-size: 80px;
-	color: #fff;
-	text-align: center;
-}
-.banner6 p{
-	font-size: 16px;
-	color: #fff;
-	text-align: center;
-}
-.banner7{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bom.jpg);
-	background-size: cover;
-}
-.banner7 h1{
-	font-size: 80px;
-	color: #fff;
-	text-align: center;
-}
-.banner7 p{
-	font-size: 16px;
-	color: #fff;
-	text-align: center;
-}
-.para-1{
-	position: absolute;
-	top: 45%;
-	left: 27%;
-}
-.para-2{
-	width: 80%;
-	position: absolute;
-	top: 45%;
-	left: 10%;
-}
-.para-3{
-	width: 80%;
-	position: absolute;
-	top: 45%;
-	left: 10%;
-}
-header.sticky .logo,
-header.sticky ul li a{
-	color: #000;
-}
-.menu-bar ul{
-	display: inline-flex;
-	list-style: none;
-}
-.menu-bar ul li{
-	width: 165px;
-	margin: 0px;
+.gallery img{
+	width: 230px;
 	padding: 10px;
-	text-align: center;
+	filter: grayscale(100);
+	transition: 1s;
 }
-.menu-bar ul li a{
-	text-decoration: none;
+.gallery img:hover{
+	filter: grayscale(0);
+	transform: scale(1.1);
 }
-.active, .menu-bar ul li:hover{
-	background: #808080;
-	border-radius: 3px;
-}
-.sub-menu-1{
-	display: none;
-	border-radius: 3px;
-}
-.menu-bar ul li:hover .sub-menu-1{
-	display: block;
-	position: absolute;
-	background: rgb(128,128,128);
-	margin-top: 10px;
-	margin-left: -10px;
-}
-.menu-bar ul li:hover .sub-menu-1 ul{
-	display: block;
-	margin: 10px;
-}
-.menu-bar ul li:hover .sub-menu-1 ul li{
-	width: 145px;
-	padding: 10px;
-	border-bottom: 1px dotted #000;
-	background: transparent;
-	border-radius: 0;
-	text-align: middle;
-}
-.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
-	border-bottom: none;
-}
-.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
-	color: #3032e5;
-}
-.first-one{
-	width: 80%;
-	margin: auto;
-	text-align: left;
-	padding-top: 50px;
-	padding-bottom: 100px;
-	color: #000;
-}
-.first-one h2, h3, p{
-	text-align: left;
-	padding-left: 20px;
-	color: #000;
-}
-.first-one p{
-	font-size: 16px;
-}
-
-
-
-
 
 
 
