@@ -461,100 +461,74 @@ input[name="r"]{
 }
 
 /*--Weeks 3 and 7 Image slider with Captions--*/
-.slideshow{
+
+div.gallery{
+	margin: 55px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 300px;
+}
+.imagegallery{
+	width: 80%;
+	margin: auto;
+	text-align: left;
+	padding-top: 0px;
+	padding-bottom: 100px;
+	color: #000;	
+}
+.imagegallery h2{
+	text-align: left;
+	padding-left: 20px;
+	color: #000;
+}
+
+div.gallery img{
 	width: 100%;
-	height: 100vh;
+	height: 200px;
+}
+
+div.gallery:hover{
+	border: 1px solid #777;
+}
+
+.container{
+	font-family: 'Roboto', sans-serif;
 	position: relative;
-	overflow: hidden;
+	margin: 0 auto;
 }
-.slideshow-item{
-	width: inherit;
-	height: inherit;
+.container .content{
 	position: absolute;
-	opacity: 0;
-	animation: cycleImages 61s infinite;
-}
-
-.slideshow-item img{
+	bottom: 0;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.5);
+	color: #f1f1f1;
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	animation: zoom 61s infinite;
+	height: 30%;
+	padding: 10px;
 }
-.slideshow-item:nth-child(1), .slideshow-item:nth-child(1) img{
-	animation-delay: 0s;
-}
-.slideshow-item:nth-child(2), .slideshow-item:nth-child(2) img{
-	animation-delay: 10s;
-}
-.slideshow-item:nth-child(3), .slideshow-item:nth-child(3) img{
-	animation-delay: 20s;
-}
-.slideshow-item:nth-child(4), .slideshow-item:nth-child(4) img{
-	animation-delay: 30s;
-}
-.slideshow-item:nth-child(5), .slideshow-item:nth-child(5) img{
-	animation-delay: 40s;
-}
-.slideshow-item:nth-child(6), .slideshow-item:nth-child(6) img{
-	animation-delay: 50s;
-}
-.slideshow-item-text{
-	max-width: 50%;
-	position: absolute;
-	top: 50%;
-	left: 0;
-	transform: translateY(-50%);
-	background-color: rgba(0,0,0, 0.8);
-	color: #fff;
-	padding: 10rem 5rem;
-}
-.slideshow-item-text h5{
-	font-size: 5rem;
-	font-family: 'Roboto', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	margin-bottom: 2.5rem;
-}
-.slideshow-item-text p{
-	font-size: 1.6rem;
-	font-family: 'Roboto', sans-serif;
-	letter-spacing: 1px;
-	font-weight: 300;
+.image {
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
-@keyframes cycleImages {
-	25%{
-		opacity: 1;
-	}
-	40%{
-		opacity: 0;
-	}
-}
 
-@keyframes zoom{
-	100%{
-		transform: scale(1.3);
-	}
-}
 
-@media screen and (max-width: 1000px) {
-	.slideshow-item-text{
-		max-width: 100%;
-		padding: 2rem;
-		top: initial;
-		bottom: 0;
-		transform: initial;
-	}
-	.slideshow-item-text h5{
-		font-size: 3rem;
-	}
 
-	.slideshow-item-text p{
-		font-size: 1.4rem;
-	}
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
