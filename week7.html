@@ -2,9 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Week 7</title>
 	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -66,36 +68,193 @@
 		<h3>Week 7 Deliverables</h3>
 		<p>Put the Week 7 deliverables, such as the BOM, SOP, and v4 parts below!</p>
 	</section>
-	<div class="imagegallery">
-		<h2>Image Gallery</h2>
-		<div class="gallery">
-			<div class="container">
-			<img src="images/bp_2.jpg" alt="blueprints" class="image">
-			<div class="content">
-				<p>This is a picture of blueprints.</p>
-		</div>
-		</div>
-		</div>
+	<section class="second-one">
+		<h2>Bill of Materials</h2>
+		<p>Ideally, something that shows a display of the full document</p>
+	</section>
+	<section class="third-one">
+		<h2>This is for the Standard Operating Procedure(SOP)</h2>
+		<p>A standard has already been set for the way the new versions of parts will be presented, so I just want to keep things more consistent and have as little change as possible.</p>
+	</section>
+ 	<div class="slider">
+ 		<div class="slide active">
+ 			<img src="images/engine.jpg" alt="">
+ 			<div class="info">
+ 				<h2>New York at Night</h2>
+ 				<p>Seriously, I just named the photo as the number one, but I didn't think to remember the actual thing the image contains.</p>
+ 			</div>
+ 		</div>
+ 		 <div class="slide">
+ 			<img src="images/robots.jpg" alt="">
+ 			<div class="info">
+ 				<h2>Earth from Space</h2>
+ 				<p>Seriously, I just named the photo as the number one, but I didn't think to remember the actual thing the image contains.</p>
+ 			</div>
+ 		</div>
+  		<div class="slide">
+ 			<img src="images/concept.jpg" alt="">
+ 			<div class="info">
+ 				<h2>This is a Gear</h2>
+ 				<p>Seriously, I just named the photo as the number one, but I didn't think to remember the actual thing the image contains.</p>
+ 			</div>
+ 		</div>
+  		<div class="slide">
+ 			<img src="images/brainstorm.jpg" alt="">
+ 			<div class="info">
+ 				<h2>The Think Tank</h2>
+ 				<p>Seriously, I just named the photo as the number one, but I didn't think to remember the actual thing the image contains.</p>
+ 			</div>
+ 		</div>
+  		<div class="slide">
+ 			<img src="images/bom.jpg" alt="">
+ 			<div class="info">
+ 				<h2>Bill of Materials</h2>
+ 				<p>Seriously, I just named the photo as the number one, but I didn't think to remember the actual thing the image contains.</p>
+ 			</div>
+ 		</div>
+ 		<div class="navigation-2">
+ 			<i class="fas fa-chevron-left prev-btn"></i>
+ 			<i class="fas fa-chevron-right next-btn"></i>
+ 		</div>
+ 		<div class="navigation-visibility">
+ 			<div class="slide-icon active"></div>
+ 			<div class="slide-icon"></div>
+ 			<div class="slide-icon"></div>
+ 			<div class="slide-icon"></div>
+ 			<div class="slide-icon"></div>
+ 		</div>
+ 	</div>
+    <script type="text/javascript">
+    const slider = document.querySelector(".slider");
+    const nextBtn = document.querySelector(".next-btn");
+    const prevBtn = document.querySelector(".prev-btn");
+    const slides = document.querySelectorAll(".slide");
+    const slideIcons = document.querySelectorAll(".slide-icon");
+    const numberOfSlides = slides.length;
+    var slideNumber = 0;
 
-		<div class="gallery">
-			<div class="container">
-			<img src="images/brainstorm.jpg" alt="blueprints" class="image">
-			<div class="content">
-				<p>This is another of blueprints.</p>
-		</div>
-		</div>
-		</div>
+    //image slider next button
+    nextBtn.addEventListener("click", () => {
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      slideIcons.forEach((slideIcon) => {
+        slideIcon.classList.remove("active");
+      });
 
+      slideNumber++;
 
-		<div class="gallery">
-			<div class="container">
-			<img src="images/robots.jpg" alt="blueprints" class="image">
-			<div class="content">
-				<p>This is yet another picture of blueprints.</p>
+      if(slideNumber > (numberOfSlides - 1)){
+        slideNumber = 0;
+      }
+
+      slides[slideNumber].classList.add("active");
+      slideIcons[slideNumber].classList.add("active");
+    });
+
+    //image slider previous button
+    prevBtn.addEventListener("click", () => {
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      slideIcons.forEach((slideIcon) => {
+        slideIcon.classList.remove("active");
+      });
+
+      slideNumber--;
+
+      if(slideNumber < 0){
+        slideNumber = numberOfSlides - 1;
+      }
+
+      slides[slideNumber].classList.add("active");
+      slideIcons[slideNumber].classList.add("active");
+    });
+
+    //image slider autoplay
+    var playSlider;
+
+    var repeater = () => {
+      playSlider = setInterval(function(){
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+
+        slideNumber++;
+
+        if(slideNumber > (numberOfSlides - 1)){
+          slideNumber = 0;
+        }
+
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      }, 4000);
+    }
+    repeater();
+
+    //stop the image slider autoplay on mouseover
+    slider.addEventListener("mouseover", () => {
+      clearInterval(playSlider);
+    });
+
+    //start the image slider autoplay again on mouseout
+    slider.addEventListener("mouseout", () => {
+      repeater();
+    });
+    </script>
+    <section class="third-one">
+    	<h2>This is for the v4 of my HPS product.</h2>
+    	<p>This is the paragraph which will explain my v4 HPS product and the changes made to some parts.</p>
+    	<div class="slidershow middle">
+		<div class="slides">
+			<input type="radio" name="r" id="r1" checked>
+			<input type="radio" name="r" id="r2">
+			<input type="radio" name="r" id="r3">
+			<input type="radio" name="r" id="r4">
+			<input type="radio" name="r" id="r5">
+			<div class="slide s1">
+				<img src="images/bom.jpg">
+			</div>
+			<div class="slide">
+				<img src="images/sketches.jpg">
+			</div>
+			<div class="slide">
+				<img src="images/study-1.jpg">
+			</div>
+			<div class="slide">
+				<img src="images/robots.jpg">
+			</div>
+			<div class="slide">
+				<img src="images/bom.jpg">
+			</div>
 		</div>
+		<div class="navigation">
+			<label for="r1" class="bar"></label>
+			<label for="r2" class="bar"></label>
+			<label for="r3" class="bar"></label>
+			<label for="r4" class="bar"></label>
+			<label for="r5" class="bar"></label>
 		</div>
+ 	</div>
+    </section>
+    <section class="footer">
+		<h4>Google HPS Product Representation</h4>
+		<p>All of what is depicted is representative of the work one would expect from the Google Hardware Product Sprint Program. All educational content depicted belongs to Google.</p>
+		<!----
+		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-facebook-square"></i>
+			<i class="fa fa-facebook-square"></i>
+			<i class="fa fa-facebook-square"></i>
+			<i class="fa fa-facebook-square"></i>
 		</div>
-	</div>
+	-->
+		<p>Made with CSS and HTML5.</p>
+		<p>Copyright 2021. All rights reserved.</p>
+	</section>
 </body>
 </html>
 
