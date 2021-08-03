@@ -217,6 +217,9 @@ header ul li a{
 	color: #fff;
 	text-align: center;
 }
+.next{
+	text-align: center;
+}
 .para-1{
 	position: absolute;
 	top: 45%;
@@ -302,6 +305,10 @@ header.sticky ul li a{
 	font-size: 16px;
 	padding-left: 20px;
 	color: #000;
+}
+.first-one figcaption{
+	text-align: center;
+	font-style: italic;
 }
 .second-one{
 	width: 80%;
