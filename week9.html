@@ -1,1 +1,104 @@
-This is the week 9 file.
+<!--Week 9 HTML File-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">google hps</a>
+		<div class="menu-bar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Weeks 1-4</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="week1.html">Week 1</a></li>
+						<li><a href="week2.html">Week 2</a></li>
+						<li><a href="week3.html">Week 3</a></li>
+						<li><a href="week4.html">Week 4</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Weeks 5-8</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="week5.html">Week 5</a></li>
+						<li><a href="week6.html">Week 6</a></li>
+						<li><a href="week7.html">Week 7</a></li>
+						<li><a href="week8.html">Week 8</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Weeks 9-12</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="week9.html">Week 9</a></li>
+						<li><a href="week10.html">Week 10</a></li>
+						<li><a href="week11.html">Week 11</a></li>
+						<li><a href="week12.html">Week 12</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="profile.html">About Me</a></li>
+		</ul>
+		</div>
+	</header>
+	<section class="banner">
+		<div class="para-2">
+			<h1>Introduction</h1>
+			<p>Home of the Noisemaker, a product made to highlight the design process for injection molded parts and products.</p>
+		</div>
+	</section>
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky", window.scrollY > 0);
+		})
+	</script>
+	<section class="first-one">
+		<h2>Overview</h2>
+		<p>
+			In the summer of 2021, 50 participants were assigned to come up with various ideas into which the components of an AIY project kit could be incorporated. After deciding on a single idea, each participant would go through the design process individually, slowly building upon the knowledge they had attained through the Hardware Product Sprint Program towards the final goal of a product which was designed for injection molding. In reality, the parts would be 3D-printed to get a sense of scale; however, each learning session was fixed particularly in the areas of injection molding and the design aspects specifically related to this manufacturing method. Therefore, by the end of the program, each participant would have gone through a complete process from ideation to the final product creation. This website demonstrates the process I followed along with 49 other participants to create my consumer electronic product, the noisemaker. While this may not be a unique idea, the creation of this product will highlight the steps I took within the program and the knowledge I have obtained following this experience.
+		</p>
+		<br>
+		<div class="next">
+		<img src="images/design-process.png" height="300" width="450">
+		</div>
+		<figcaption>Example Design Process framework.</figcaption>
+		<br>
+		<h3>Project Overview and AIY Kit Contents</h3>
+		<p>
+			The goal of the project is to define a product using the parts given to the user from the Google AIY Voice Kit. The manufacturing method that was meant to be used for this project was plastic injection molding. The AIY Voice Kit came with a number of parts, including a cardboard enclosure, which are pictured below. The task was for the HPS participants to each create an enclosure that could be made through injection molding. This task was to be completed over the course of 12 weeks, with continuous guidance given on the different components making up the design process regarding hardware engineering. Once the parts were created within a CAD software, the parts would be created by Google and sent back to the participant for assembly. 
+		</p>
+		<br>
+		<div class="next">
+		<img src="images/aiy-1.png" height="200" width="300">
+		<img src="images/aiy-2.png" height="200" width="300">
+		</div>
+		<figcaption>AIY Voice Kit(left) and interior assembled AIY product(right).</figcaption>
+		<br>
+		<h3>Product Constraints</h3>
+		<p>
+			A few constraints involved with the HPS project were with regards to the size. The largest dimension of the product was not allowed to exceed 150mm, and the suggested wall thickness was about 3mm. The enclosure each HPS student was assigned to create was to consist of no more than 4 parts. Finally, as mentioned before, the parts each had to be injection molding friendly, and the Library of Parts at our disposal gave some options regarding attaching the parts together. This could be expanded upon, but the initial list served as a strong starting point for the HPS participants.
+		</p>
+	</section>
+	<section class="footer">
+		<h4>Google HPS Product Representation</h4>
+		<p>All of what is depicted is representative of the work one would expect from the Google Hardware Product Sprint Program. All educational content depicted belongs to Google.</p>
+		<!----
+		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-facebook-square"></i>
+			<i class="fa fa-facebook-square"></i>
+			<i class="fa fa-facebook-square"></i>
+			<i class="fa fa-facebook-square"></i>
+		</div>
+	-->
+		<p>Made with CSS and HTML5.</p>
+		<p>Copyright 2021. All rights reserved.</p>
+	</section>
+</body>
+</html>
