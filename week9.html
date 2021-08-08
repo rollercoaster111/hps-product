@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
 </head>
 <body>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 	<header>
 		<a href="#" class="logo">google hps</a>
 		<div class="menu-bar">
@@ -49,7 +52,7 @@
 	<section class="banner">
 		<div class="para-2">
 			<h1>Week 9: Tolerance Analysis, Part 1</h1>
-			<p>Home of the Noisemaker, a product made to highlight the design process for injection molded parts and products.</p>
+			<p>"The details are not the details, they make the design." -Charles Eames</p>
 		</div>
 	</section>
 	<script type="text/javascript">
@@ -67,39 +70,40 @@
 		<div class="next">
 		<img src="images/design-process.png" height="300" width="450">
 		</div>
-		<figcaption>Example Design Process framework.</figcaption>
+		<figcaption>Example of dimensions for tolerance analysis of a gap.</figcaption>
 		<br>
 		<h3>Tolerance Analysis Cases</h3>
 		<p>
 			I chose three different cases to analyze for my product for the tolerance analysis. Each of these cases includes an expected gap to account for. Below are the charts displaying the tolerance analysis of the three areas. 
 		</p>
-		<video width="300" height="200" controls>
-			<source src="exploded-2.mp4" type="video/mp4">
-		</video>
 		<br>
-		<h3>Tolerance Analysis #1</h3>
-		<p>This is for the gap in the back of the product between the circuit cover and the back cover.</p>
-		<br>
-		<table border="1" width="600" height="100">
-			<tr>
-				<td rowspan="3">Step 1: System Design Limits</td>
-				<td>Nominal Design Gap (mm)</td>
-				<td>1.00</td>
-			</tr>
-			<tr>
-				<td>Upper Spec Limit (mm)</td>
-				<td>1.80</td>
-			</tr>
-			<tr>
-				<td>Lower Spec Limit (mm)</td>
-				<td>0.20</td>
-			</tr>
-		</table>
-		<table border="1" width="600" height="600">
-			<tr>
-				<td><img src="images/brainstorm.jpg"></td>
-			</tr>
-		</table>
+		<div class="container-fluid">
+      <div class="item col-sm-6 col-md-4 mb-3">
+				<h3>Tolerance Analysis Case #1</h3>
+        <a href="images/brainstorm.jpg" class="fancybox" data-fancybox="gallery1">
+          <center><img src="images/ta-1.PNG" width="70%" height="70%"></center>
+        </a>
+				<figcaption>Rear gap between circuit cover and back cover.</figcaption>
+      </div>
+			<br>
+			<br>
+      <div class="item col-sm-6 col-md-4 mb-3">
+				<h3>Tolerance Analysis Case #2</h3>
+        <a href="images/sketches.jpg" class="fancybox" data-fancybox="gallery1">
+          <center><img src="images/ta-2.PNG" width="70%" height="70%"></center>
+        </a>
+				<figcaption>Bottom screw setup for front/back covers and bottom case.</figcaption>
+      </div>
+			<br>
+			<br>
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <h3>Tolerance Analysis Case #3</h3>
+        <a href="images/concept.jpg"class="fancybox" data-fancybox="gallery1">
+          <center><img src="images/ta-3.PNG"width="70%" height="70%"></center>
+        </a>
+        <figcaption>Gap between AIY speaker and upper case for the rubber sheet.</figcaption>
+      </div>
+    </div>
 	</section>
 	<section class="footer">
 		<h4>Google HPS Product Representation</h4>
