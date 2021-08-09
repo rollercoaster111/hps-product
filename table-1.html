@@ -5,11 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <table border="1" width="600" height="100">
+<body class="phone">
+  <table class="content-table" border="1" width="600" height="100">
     <tr>
-      <td rowspan="3">Step 1: System Design Limits</td>
+      <th rowspan="3">System Design Limits</th>
       <td>Nominal Design Gap (mm)</td>
       <td>1.00</td>
     </tr>
@@ -22,5 +23,117 @@
       <td>0.20</td>
     </tr>
   </table>
+  <table class="content-table">
+    <tr>
+      <th rowspan="4">List of Assumptions</th>
+      <th>#</th>
+      <th>Description of Assumptions</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>There is some give for both the screw and the circuit cover.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>There must be some space between the circuit cover and the back cover.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>There is a tolerance regarding the positioning of the screw holes.</td>
+    </tr>
+  </table>
+  <table class="content-table">
+    <tr>
+      <th rowspan="4">Tolerance Loop and Tolerance Values</th>
+      <th>#</th>
+      <th>Part</th>
+      <th>Dimension Description</th>
+      <th>Dimension (mm)</th>
+      <th>Tolerance (mm)</th>
+      <th>Vector (+/- 1)</th>
+      <th>CPK</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Bottom Case</td>
+      <td>Distance between the screw holes</td>
+      <td>12.75</td>
+      <td>0.40</td>
+      <td>+1</td>
+      <td>1.33</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Circuit Cover</td>
+      <td>Tolerance between the holes and the edge of the part</td>
+      <td>1.11</td>
+      <td>0.20</td>
+      <td>-1</td>
+      <td>1.33</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Back Cover</td>
+      <td>From the inner edge of the part to the screw hole</td>
+      <td>9.89</td>
+      <td>0.20</td>
+      <td>-1</td>
+      <td>1.33</td>
+    </tr>
+  </table>
+  <div>
+  <table class="content-table">
+    <tr>
+      <th rowspan="13">Evaluate Results</th>
+      <th colspan="3">Worst Case Results</th>
+    </tr>
+    <tr>
+      <td rowspan="3">Copy from Step 1</td>
+      <td>Design Gap</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>USL</td>
+      <td>1.80</td>
+    </tr>
+    <tr>
+      <td>LSL</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <th class="divider" colspan="3"></th>
+    </tr>
+    <tr>
+      <td colspan="2">Calculated Gap</td>
+      <td>1.75</td>
+    </tr>
+    <tr>
+      <td colspan="2">Worst Case Tolerance</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <th class="divider" colspan="3"></th>
+    </tr>
+    <tr>
+      <td colspan="2">Worst Case-Upper Limit</td>
+      <td>2.55</td>
+    </tr>
+    <tr>
+      <td colspan="2">Worst Case Lower Limit</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <th class="divider" colspan="3"></th>
+    </tr>
+    <tr>
+      <td colspan="2">Upper Spec Limit Check</td>
+      <td class="top">FAIL</td>
+    </tr>
+    <tr>
+      <td colspan="2">Lower Spec Limit Check</td>
+      <td class="bottom">PASS</td>
+    </tr>
+  </table>
+</div>
 </body>
 </html>
