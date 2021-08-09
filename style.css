@@ -29,11 +29,14 @@
   border: 1px solid #f6f8f8;
 }
 .content-table .top{
-  background-color: rgb(224, 46, 82);
+  background-color: hsl(348, 74%, 53%);
 }
 .content-table .bottom{
-  background-color: rgb(57, 226, 57);
+  background-color: hsl(120, 74%, 55%);
 }
 .content-table .divider{
   background-color: white;
 }
+
+/*--rgb(224, 46, 82);--*/
+/*--hsl(348, 74%, 53%);--*/
