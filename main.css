@@ -235,6 +235,11 @@ header ul li a{
 	color: #fff;
 	text-align: center;
 }
+/*--Week 8 Animation --*/
+.vid{
+	justify-content: center;
+	margin-top: -50px;
+}
 /*---Week 9 Banner --*/
 .banner9{
 	position: relative;
