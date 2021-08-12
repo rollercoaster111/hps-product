@@ -7,7 +7,7 @@
 	font-family: 'Roboto', sans-serif;
 }
 body{
-	background: #ddd;
+	background: hsl(240, 74%, 10%);
 	min-height: 200vh;
 	margin: 0;
 	padding: 0;
@@ -57,7 +57,7 @@ header ul li a{
 	font-weight: 500px;
 }
 .footer{
-	color: #000;
+	color: hsl(0, 22%, 100%);
 	width: 100%;
 	text-align: center;
 	padding: 0px 0px;
@@ -71,7 +71,7 @@ header ul li a{
 .footer p{
 	font-weight: 200;
 	text-align: center;
-	color: #000;
+	color: hsl(0, 0%, 100%);
 }
 /*--Home Page Banner--*/
 .banner{
@@ -335,17 +335,17 @@ header.sticky ul li a{
 	text-align: left;
 	padding-top: 50px;
 	padding-bottom: 100px;
-	color: #000;
+	color: hsl(0, 22%, 100%);
 }
 .first-one h2, h3, p{
 	text-align: left;
 	padding-left: 20px;
-	color: #000;
+	color: hsl(0, 22%, 100%);
 }
 .first-one p{
 	font-size: 16px;
 	padding-left: 20px;
-	color: #000;
+	color: hsl(0, 22%, 100%);
 }
 .first-one figcaption, img{
 	margin-left: auto;
@@ -360,17 +360,17 @@ header.sticky ul li a{
 	text-align: left;
 	padding-top: 50px;
 	padding-bottom: 100px;
-	color: #000;
+	color: hsl(0, 22%, 100%);
 }
 .second-one h2, h3, p{
 	text-align: left;
 	padding-left: 20px;
-	color: #000;
+	color: hsl(0, 22%, 100%);
 }
 .second-one p{
 	font-size: 16px;
 	padding-left: 20px;
-	color: #000;
+	color: hsl(0, 22%, 100%);
 }
 .third-one{
 	width: 80%;
@@ -378,18 +378,51 @@ header.sticky ul li a{
 	text-align: left;
 	padding-top: 50px;
 	padding-bottom: 10px;
-	color: #000;
+	color: hsl(0, 22%, 100%);
 }
 .third-one h2, h3, p{
 	text-align: left;
 	padding-left: 20px;
-	color: #000;
+	color: hsl(0, 22%, 100%);
 }
 .third-one p{
 	font-size: 16px;
 	padding-left: 20px;
-	color: #000;
+	color: hsl(0, 22%, 100%);
 }
+
+
+.last-one{
+	width: 80%;
+	margin: auto;
+	text-align: left;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	color: hsl(0, 22%, 100%);
+}
+.last-one h2{
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	margin-top: 100px;
+	color: hsl(120,57%,100%);
+}
+.last-one p{
+	text-align: justify;
+	margin-right: 100px;
+	padding-left: 20px;
+	color: hsl(120,57%,100%);
+}
+.last-one figcaption, img{
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	text-align: center;
+	font-style: italic;
+}
+
+
 /*---Week 1 Concepts Display --*/
 .features{
 	width: 80%;
