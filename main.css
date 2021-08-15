@@ -390,7 +390,9 @@ header.sticky ul li a{
 	padding-left: 20px;
 	color: hsl(0, 22%, 100%);
 }
-
+.third-one a{
+	color:aqua;
+}
 
 .last-one{
 	width: 80%;
@@ -630,6 +632,7 @@ input[name="r"]{
 .slider .slide .info p{
   font-size: 1em;
   font-weight: 400;
+	color: #222;
 }
 
 .navigation-2{
