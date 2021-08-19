@@ -240,7 +240,7 @@ header ul li a{
 	justify-content: center;
 	margin-top: -50px;
 }
-/*---Week 9 Banner --*/
+/*---Week 9/10 Banner --*/
 .banner9{
 	position: relative;
 	width: 100%;
@@ -254,6 +254,42 @@ header ul li a{
 	text-align: center;
 }
 .banner9 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+/*-----Week 11 Banner --*/
+.banner11{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/fixes.JPG);
+	background-size: cover;
+}
+.banner11 h1{
+	font-size: 72px;
+	color: #fff;
+	text-align: center;
+}
+.banner11 p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+/*----Week 12 Banner--*/
+.banner12{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/presentation.JPG);
+	background-size: cover;
+}
+.banner12 h1{
+	font-size: 72px;
+	color: #fff;
+	text-align: center;
+}
+.banner12 p{
 	font-size: 16px;
 	color: #fff;
 	text-align: center;
